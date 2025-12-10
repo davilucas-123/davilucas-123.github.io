@@ -1,11 +1,9 @@
-// Rolagem suave ao clicar no menu
+// Rolagem suave
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", event => {
     event.preventDefault();
     const alvo = document.querySelector(link.getAttribute("href"));
-    if (alvo) {
-      alvo.scrollIntoView({ behavior: "smooth" });
-    }
+    if (alvo) alvo.scrollIntoView({ behavior: "smooth" });
   });
 });
 
@@ -13,15 +11,20 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 const btnTopo = document.getElementById("btn-topo");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    btnTopo.style.display = "block";
-  } else {
-    btnTopo.style.display = "none";
-  }
+  btnTopo.style.display = window.scrollY > 300 ? "block" : "none";
 });
 
 btnTopo.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-console.log("Portfólio do Davi carregado com interações!");
+// Tema claro/escuro (sem salvar)
+const body = document.body;
+const themeToggle = document.getElementById("theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+  const isLight = body.classList.toggle("light");
+  themeToggle.textContent = isLight ? "🌙" : "☀️";
+});
+
+console.log("Portfólio do Davi com tema claro/escuro simples!");
