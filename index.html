@@ -19,11 +19,11 @@
     <nav class="nav">
       <a href="#sobre">Sobre</a>
       <a href="#conhecimentos">Conhecimentos</a>
+      <a href="#habilidades">Habilidades</a>
       <a href="#escola">Escola técnica</a>
       <a href="#certificados">Certificados</a>
       <a href="#contato">Contato</a>
     </nav>
-   
   </header>
 
   <main class="container">
@@ -44,6 +44,18 @@
         <li>Lógica de programação</li>
         <li>Informática básica</li>
         <li>Noções de Inteligência Artificial</li>
+      </ul>
+    </section>
+
+    <!-- NOVA SEÇÃO HABILIDADES -->
+    <section id="habilidades" class="card">
+      <h2>Habilidades</h2>
+      <ul class="tags">
+        <li>HTML semântico</li>
+        <li>CSS básico (layout e responsividade)</li>
+        <li>Noções de JavaScript</li>
+        <li>Git e GitHub (versionamento básico)</li>
+        <li>Pacote Office / Informática básica</li>
       </ul>
     </section>
 
@@ -73,9 +85,36 @@
 
     <section id="contato" class="card">
       <h2>Contato</h2>
+      <p>Você pode falar comigo pelos links abaixo ou enviar uma mensagem pelo formulário.</p>
+
       <p>Email: <a href="mailto:davilucasdaniel2009@gmail.com">davilucasdaniel2009@gmail.com</a></p>
       <p>Instagram: <a href="https://instagram.com/davild16" target="_blank">@davild16</a></p>
       <p>WhatsApp: <a href="https://wa.me/5531998526580" target="_blank">+55 (31) 99852-6580</a></p>
+      <p>Currículo: <a href="curriculo-davi-lucas.pdf" target="_blank">Baixar PDF</a></p>
+
+      <form class="contato-form">
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui sua mensagem" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar" disabled>
+          Enviar (em breve)
+        </button>
+      </form>
+      <p style="font-size: 0.8rem; margin-top: 8px; color: #9ca3af;">
+        *Formulário apenas visual por enquanto. Entre em contato pelos links acima.
+      </p>
     </section>
   </main>
 
