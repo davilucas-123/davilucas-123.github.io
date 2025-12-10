@@ -31,46 +31,12 @@ body {
   gap: 10px;
 }
 
-
-.avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #38bdf8;
-}
-
-.subtitle {
-  font-size: 0.8rem;
-  color: #9ca3af;
-}
-
 .nav {
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-.nav a {
-  color: #e5e7eb;
-  text-decoration: none;
-  font-size: 0.9rem;
-  position: relative;
+  gap: 12px;   /* controla a distância entre os links e o botão */
 }
 
-.nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(to right, #38bdf8, #22c55e);
-  transition: width 0.2s ease;
-}
-
-.nav a:hover::after {
-  width: 100%;
-}
 #theme-toggle {
   margin-left: 12px;
   padding: 6px 10px;
@@ -81,6 +47,7 @@ body {
   cursor: pointer;
   font-size: 0.9rem;
 }
+
 
 /* MAIN */
 
@@ -243,18 +210,10 @@ body.light #contato a {
     justify-content: center;
   }
 
-  .avatar {
-    width: 72px;
-    height: 72px;
-  }
-
-  .subtitle {
-    text-align: center;
-  }
-
-  ..nav {
+  .nav {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
   }
+
 }
