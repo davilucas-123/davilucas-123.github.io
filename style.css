@@ -34,18 +34,7 @@ body {
 .nav {
   display: flex;
   align-items: center;
-  gap: 12px;   /* controla a distância entre os links e o botão */
-}
-
-#theme-toggle {
-  margin-left: 12px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.6);
-  background: rgba(15, 23, 42, 0.9);
-  color: #e5e7eb;
-  cursor: pointer;
-  font-size: 0.9rem;
+  gap: 16px;
 }
 
 
