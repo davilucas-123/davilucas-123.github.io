@@ -72,6 +72,17 @@ body {
 .nav a:hover::after {
   width: 100%;
 }
+#theme-toggle {
+  margin-left: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
 
 /* MAIN */
 
@@ -139,6 +150,44 @@ body {
 
 #contato a:hover {
   text-decoration: underline;
+}
+/* Tema claro */
+
+body.light {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+body.light .header {
+  background: rgba(243, 244, 246, 0.96);
+  border-bottom-color: rgba(156, 163, 175, 0.6);
+}
+
+body.light .card {
+  background: #ffffff;
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow: 0 16px 40px rgba(148, 163, 184, 0.45);
+}
+
+body.light .card h2 {
+  color: #1f2937;
+  -webkit-background-clip: border-box;
+}
+
+body.light .card h2::after {
+  background: linear-gradient(to right, #3b82f6, #22c55e);
+}
+
+body.light .subtitle {
+  color: #4b5563;
+}
+
+body.light .nav a {
+  color: #111827;
+}
+
+body.light #contato a {
+  color: #2563eb;
 }
 
 /* BOTÃO TOPO */
