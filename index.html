@@ -91,30 +91,37 @@
       <p>Instagram: <a href="https://instagram.com/davild16" target="_blank">@davild16</a></p>
       <p>WhatsApp: <a href="https://wa.me/5531998526580" target="_blank">+55 (31) 99852-6580</a></p>
       <p>Currículo: <a href="curriculo-davi-lucas.pdf" target="_blank">Baixar PDF</a></p>
+     <form class="contato-form"
+      action="https://formsubmit.co/el/lomagi"
+      method="POST">
 
-      <form class="contato-form">
-        <div class="campo">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-        </div>
+  <input type="hidden" name="_subject" value="Novo contato pelo portfólio">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
 
-        <div class="campo">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
-        </div>
+  <div class="campo">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+  </div>
 
-        <div class="campo">
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui sua mensagem" required></textarea>
-        </div>
+  <div class="campo">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+  </div>
 
-        <button type="submit" class="btn-enviar" false>
-          Enviar
-        </button>
-      </form>
-      <p style="font-size: 0.8rem; margin-top: 8px; color: #9ca3af;">
-        *Formulário apenas visual por enquanto. Entre em contato pelos links acima.
-      </p>
+  <div class="campo">
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui sua mensagem" required></textarea>
+  </div>
+
+  <button type="submit" class="btn-enviar">
+    Enviar
+  </button>
+</form>
+<p style="font-size: 0.8rem; margin-top: 8px; color: #9ca3af;">
+  *As mensagens são enviadas diretamente para meu e-mail.
+    </p>
+      
     </section>
   </main>
 
